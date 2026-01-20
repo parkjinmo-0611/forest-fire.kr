@@ -1,7 +1,14 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import os
+
+plt.rc('font', family='Malgun Gothic')
+plt.rcParams['axes.unicode_minus'] = False 
+
+try:
+    df_day = pd.read_csv('요일별_산불발생_현황(97-24).csv', encoding='cp949')
+except:
+    df_day = pd.read_csv('요일별_산불발생_현황(97-24).csv', encoding='utf-8')
 
 df_day_avg = df_day[(df_day['기간별'] == '10년평균') & 
                     (~df_day['요일별'].isin(['합계', '공휴일']))].copy()
