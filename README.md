@@ -1,2 +1,22 @@
-# forest-fire.kr
-빅데이터와 웹 크롤링을 활용한 대한민국 산불 발생 현황 분석
+# 🔥 빅데이터로 분석한 대한민국 산불 발생 현황
+
+## 📌 프로젝트 소개
+본 프로젝트는 공공 데이터를 활용하여 산불 발생의 주요 원인과 특징을 분석하고, 실시간 뉴스를 통해 최신 정보를 확인하는 프로젝트입니다.
+
+## 🕵️ 분석 가설 및 결과
+1. **봄철 산불 발생**: 10년 평균 데이터 분석 결과, 봄(3~5월)의 산불 발생 건수가 타 계절 대비 압도적으로 높음을 확인.
+2. **요일별 분석**: 주말(토, 일)의 산불 발생 건수가 평일 대비 높게 나타나며, 입산자 활동량과의 상관관계 확인.
+3. **인구와 산불**: 경기도 등 인구 밀집 지역에서 발생 빈도가 높으나, 강원/경북 등 산림 지역의 특수성도 함께 확인.
+
+## 🛠 사용 기술
+- **Language**: Python
+- **Library**: Pandas, Matplotlib, Seaborn, BeautifulSoup
+- **Data**: 산림청 산불 발생 공공 데이터 (1997-2024)
+
+## 📊 주요 시각화 결과
+<img width="1200" height="600" alt="계절별" src="https://github.com/user-attachments/assets/07dacbe3-59a5-4845-95f1-f7f29870af08" />
+<img width="972" height="538" alt="인구수" src="https://github.com/user-attachments/assets/40ae76e0-48fc-4077-aaf6-1ddd5891db93" />
+<img width="1200" height="600" alt="요일별" src="https://github.com/user-attachments/assets/56f4aa4e-8b0b-4f99-a271-0e335a9af18c" />
+
+## 참고 링크
+[javascript:treeDownList("C_12,MT_ZTITLE,2")](https://kosis.kr/statHtml/statHtml.do?orgId=136&tblId=TX_13625_A002&conn_path=I2)
